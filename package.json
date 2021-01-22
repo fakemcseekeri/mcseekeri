@@ -1,0 +1,19 @@
+{
+  "name": "mcseekeri",
+  "version": "1.0.0",
+  "description": "MC探索者i文件持久存储",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fakemcseekeri/mcseekeri.git"
+  },
+  "author": "MCSeekeri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fakemcseekeri/mcseekeri/issues"
+  },
+  "homepage": "https://github.com/fakemcseekeri/mcseekeri#readme"
+}
