@@ -10,6 +10,19 @@ jobs:
     name: npm-publish
     runs-on: ubuntu-latest
     steps:
+      - name: Use Node.js 14.x 
+        uses: actions/setup-node@v1 
+        with:
+          node-version: "14.x"
+        # 缓存 node_modules，缓存机制参见 GitHub 文档：https://help.github.com/en/actions/configuring-and-managing-workflows/caching-dependencies-to-speed-up-workflows
+      - name: Cache node_modules
+        uses: actions/cache@v1 # 使用 GitHub 官方的缓存 Action。
+        env:
+          cache-name: hexo-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
+    
     - name: Deploy
       run: |
           gulp
