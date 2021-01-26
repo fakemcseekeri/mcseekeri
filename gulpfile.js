@@ -1,8 +1,8 @@
-const gulp = require('gulp');
 const webp = require('gulp-webp');
- 
-gulp.task('default', () =>
-    gulp.src('*/*.*g')
-        .pipe(webp())
-        .pipe(gulp.dest('dist'))
-);
+const rename = require('gulp-rename')
+gulp.src('./image/*.{png,jpg}')
+  .pipe(rename(function (path) {
+    path.extname += '.webp';
+  })
+  .pipe(webp())
+  .pipe(gulp.dest('./'));
