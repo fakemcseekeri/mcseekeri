@@ -6,4 +6,4 @@ gulp.src('./image/*.{png,jpg}')
     path.extname += '.webp';
   })
   .pipe(webp())
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('./')));
