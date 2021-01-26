@@ -3,11 +3,17 @@ on:
   push:
     branches:
       - main # Change this to your default branch
+
+
 jobs:
   npm-publish:
     name: npm-publish
     runs-on: ubuntu-latest
     steps:
+    - name: Deploy
+      run: |
+          gulp
+
     - name: Checkout repository
       uses: actions/checkout@v2
     - name: Publish if version has been updated
