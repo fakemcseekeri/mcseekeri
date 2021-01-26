@@ -1,4 +1,3 @@
-const gulp = require('gulp');
 const webp = require('gulp-webp');
 const rename = require('gulp-rename')
 gulp.src('./image/*.{png,jpg}')
