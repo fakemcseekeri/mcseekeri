@@ -1,6 +1,6 @@
 {
   "name": "mcseekeri",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "MC探索者i文件持久存储",
   "main": "index.js",
   "scripts": {
