@@ -1,6 +1,6 @@
 {
   "name": "mcseekeri",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "MC探索者i文件持久存储",
   "main": "index.js",
   "scripts": {
@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/fakemcseekeri/mcseekeri/issues"
   },
-  "homepage": "https://github.com/fakemcseekeri/mcseekeri#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-webp": "^4.0.1"
-  }
+  "homepage": "https://github.com/fakemcseekeri/mcseekeri#readme"
 }
